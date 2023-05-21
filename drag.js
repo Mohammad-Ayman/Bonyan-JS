@@ -48,13 +48,12 @@ const dropHandler = (e) => {
   }
 };
 
-liElements.forEach((liElement) => {
-  liElement.addEventListener("dragstart", dragStart);
-  liElement.addEventListener("dragend", dragEnd);
-  // liElement.addEventListener("dragover", dragOver);
-});
-
-ulElements.forEach((ulElement) => {
-  ulElement.addEventListener("drop", dropHandler);
-  ulElement.addEventListener("dragover", dragOver);
-});
+export {
+  liElements,
+  ulElements,
+  addDragStart,
+  dragStart,
+  dragEnd,
+  dragOver,
+  dropHandler,
+};
