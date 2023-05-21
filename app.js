@@ -1,4 +1,9 @@
-import { addBtns, deleteBtns, btnHandler, deleteHandler } from "./tasks.js";
+import {
+  addBtns,
+  deleteBtns,
+  btnHandler,
+  deleteHandler,
+} from "./assets/scripts/tasks.js";
 import {
   liElements,
   ulElements,
@@ -6,7 +11,7 @@ import {
   dragEnd,
   dragOver,
   dropHandler,
-} from "./drag.js";
+} from "./assets/scripts/drag.js";
 
 // eventListeners
 addBtns.forEach((btn) => btn.addEventListener("click", btnHandler));
