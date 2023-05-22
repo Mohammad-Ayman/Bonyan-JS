@@ -1,4 +1,4 @@
-import { addDragStart } from "./drag.js";
+import { addDragStart as dragStart } from "./drag.js";
 // Global variables
 const addBtns = document.querySelectorAll(".add-btn");
 const deleteBtns = document.querySelectorAll(".delete-icon");
@@ -29,7 +29,7 @@ const renderEntry = (target) => {
 
   // attach delete button to new entries
   addDeleteToNewEntry(newLi);
-  addDragStart(newLi);
+  dragStart(newLi);
 };
 
 const addDeleteToNewEntry = (newLi) => {
